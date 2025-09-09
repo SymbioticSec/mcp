@@ -60,7 +60,7 @@ Configuration for other MCP clients may vary but generally follows the same stru
       "command": "node",
       "args": ["path/to/build/index.js"],
       "env": {
-        "SYMBIOTIC_API_TOKEN": "your_token_here",
+        "SYMBIOTIC_API_TOKEN": "your_token_here"
       }
     }
   }
