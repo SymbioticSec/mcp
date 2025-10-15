@@ -13,6 +13,24 @@ This server exposes security analysis tools via the MCP protocol for any MCP-com
 - **`security_scan_files`** - Comprehensive security scan (code + infrastructure)
 - **`get_supported_languages`** - List of supported programming languages
 
+## Cursor Integration
+
+### Setting up the Security Review Command
+
+1. Create a `.cursor` directory in your project root if it doesn't exist
+2. Create or update `.cursor/commands/security-review.md` with the contents of [security-review.md](security-review.md)
+
+### Using the Command
+
+1. Open the chat panel in Cursor (Cmd+L or Ctrl+L)
+2. Type `/security-review` followed by optional file paths or glob patterns
+3. The command will perform a comprehensive security analysis, including:
+   - Scanning selected files or the entire workspace
+   - Analyzing for security vulnerabilities
+   - Triaging findings and filtering false positives
+   - Providing a detailed report with severity levels and remediation suggestions
+   - Offering to apply automatic fixes for identified issues
+
 ## Installation
 
 1. **Install symbiotic-cli**
